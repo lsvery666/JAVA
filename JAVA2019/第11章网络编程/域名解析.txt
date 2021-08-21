@@ -1,0 +1,3 @@
+C：\WINDOWS\system32\drivers\etc\hosts
+域名解析 DNS服务
+如访问www.baidu.com 先去上面那个路径里面去找有没有对应的IP地址 再去DNS服务器里面找

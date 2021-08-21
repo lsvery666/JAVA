@@ -1,0 +1,27 @@
+
+使用集合相关的知识模拟购物商城
+1.分配购物车
+class ShoppingCar{
+	Map(Product,Integer) ProductMaps;
+	//对外提供方法
+	//1.添加一个商品到购物车
+	void add(Product p){}
+	//2.添加N个相同商品到购物车
+	void add(Product p,int n){}
+	//3.删除一类商品
+	void removeAll(Product p){}
+	//4.删除一个商品
+	void remove(Product p){}
+	//5.删除N个商品
+	void remove(Product p,int n){}
+	//6.清空购物车
+	//7.打印购物单
+}
+2.商品
+class Product{
+	String no;
+	String name;
+	double price;
+	//hashCode+equals
+}
+3.测试程序
