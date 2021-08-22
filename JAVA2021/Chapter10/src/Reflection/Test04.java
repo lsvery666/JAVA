@@ -21,6 +21,7 @@ public class Test04 {
         A a = new B();
         System.out.println(A.m);
         System.out.println(B.n);
+        System.out.println(B.M);
     }
 }
 

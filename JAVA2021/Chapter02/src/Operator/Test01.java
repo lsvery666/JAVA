@@ -23,14 +23,14 @@ public class Test01 {
         int e = 3;
         System.out.println(d / e);	// 3
 
-        float m = 10;
+        float m = 10;   // int到float的自动转换
         float n = 3;
         System.out.println(m / n);  // 3.3333333
 
-        byte h = 10;
+        byte h = 127;
         // h = h + 10;    // 不兼容的类型: 从int转换到byte可能会有损失
         h += 10;          // h = (byte)(h + 10)
-        System.out.println(h);	// 20
+        System.out.println(h);	// -119
 
         byte i = 10;
         i += 1000;

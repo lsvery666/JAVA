@@ -1,13 +1,13 @@
 package ControlStructure;
 
 /*
-if(条件){
-    语句;
-}else if{
-    语句;
-}else{
-    语句
-}
+    if(条件){
+        语句;
+    }else if{
+        语句;
+    }else{
+        语句
+    }
  */
 
 public class Test01 {

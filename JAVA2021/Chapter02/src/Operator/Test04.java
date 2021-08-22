@@ -6,8 +6,8 @@ package Operator;
 
 public class Test04 {
     public static void main(String[] args) {
-        System.out.println(Integer.toBinaryString(-1) + " B");  // -1:11111111 11111111 11111111 11111111
-        System.out.println(Integer.toBinaryString(2) + " B");   //  2:00000000 00000000 00000000 00000010
+        System.out.println(Integer.toBinaryString(-1));  // -1:11111111 11111111 11111111 11111111
+        System.out.println(Integer.toBinaryString(2));   //  2:00000000 00000000 00000000 00000010
         System.out.println(-1 & 2);		// 2
         System.out.println(-1 | 2);		// -1
         System.out.println(~ -1);       // 0
