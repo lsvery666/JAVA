@@ -2,7 +2,7 @@ package Variable;
 
 public class Test02 {
     public static void main(String[] args) {
-        Integer a = 100;
+        Integer a = 129;
         change(a);
         System.out.println(a);
 

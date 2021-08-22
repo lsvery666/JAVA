@@ -24,7 +24,7 @@ public class Test02 {
         System.out.println(c1 == c2);
         System.out.println(c1 == c3);
 
-        // 方法四：对于内置数据类型，可以通过包装类.TYPE获得
+        // 方法四：对于基本数据类型，可以通过包装类.TYPE获得
         Class c = Integer.TYPE;
         System.out.println(c);
     }
