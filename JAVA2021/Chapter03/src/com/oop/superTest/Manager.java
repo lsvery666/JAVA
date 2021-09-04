@@ -5,14 +5,13 @@ public class Manager extends Employee{
     String name = "李四";
     //成员方法
     public void work(){
-        System.out.println("经理在工作");
+        System.out.println("经理"+name+"在工作");
     }
     public void m1(){
-        //work();
         super.work();
-        System.out.println(name);
-        System.out.println(this.name);
+        work();
         System.out.println(super.name);
+        System.out.println(this.name);
     }
 	/*
 	错误：

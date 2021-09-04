@@ -23,21 +23,15 @@ class B {
 
 class Outter {
     private class InnerClassA extends A {
-        private String name(){
-            return getName();
-        }
     }
     private class InnerClassB extends B {
-        private int age(){
-            return getAge();
-        }
     }
     public String getName() {
         // 访问内部类的私有方法
-        return new InnerClassA().name();
+        return new InnerClassA().getName();
     }
     public int getAge() {
-        return new InnerClassB().age();
+        return new InnerClassB().getAge();
     }
 }
 

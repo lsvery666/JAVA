@@ -15,11 +15,12 @@ public class Test01 {
 
         Outer.Inner i = new Outer().new Inner();
         i.fun();
+        o.fun();
     }
 }
 
 class Outer{
-    private String name = "Test";
+    private String name = "Outer";
     public static int age = 20;
 
     class Inner{
@@ -27,6 +28,7 @@ class Outer{
         public void fun(){
             System.out.println(name);
             System.out.println(age);
+            name = "Inner";
             age = 30;
         }
     }

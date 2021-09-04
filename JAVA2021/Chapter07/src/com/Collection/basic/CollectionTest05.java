@@ -8,6 +8,9 @@ package com.Collection.basic;
     集合在被遍历期间如果内容发生变化，就会改变modCount的值。
     每当迭代器使用hashNext()/next()遍历下一个元素之前，都会检测modCount变量是否为expectedmodCount值，是的话就返回遍历；否则抛出异常，终止遍历。
     Tip：这里异常的抛出条件是检测到 modCount！=expectedmodCount 这个条件。如果集合发生变化时修改modCount值刚好又设置为了expectedmodCount值，则异常不会抛出。
+
+    在用集合本身的方法add， remove时modCount++，在用迭代器进行add remove时，会调用集合本身的add remove，之后会执行依据expectedmodCount = modCount
+
  */
 
 import java.util.ArrayList;

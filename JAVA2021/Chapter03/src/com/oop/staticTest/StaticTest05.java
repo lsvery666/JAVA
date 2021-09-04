@@ -6,7 +6,9 @@ package com.oop.staticTest;
 */
 public class StaticTest05{
     static{
+        // 可以修改
         i = 200;
+        // 但不能访问
         // System.out.println(i);   非法前向引用
     }
     static int i = 100;

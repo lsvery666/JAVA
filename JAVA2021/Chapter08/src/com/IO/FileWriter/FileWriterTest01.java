@@ -2,7 +2,7 @@ package com.IO.FileWriter;
 /*
 	java.io.Writer;
 		java.io.OutputStreamWriter;
-			java.io.FileWriter;ÎÄ¼ş×Ö·ûÊä³öÁ÷
+			java.io.FileWriter;æ–‡ä»¶å­—ç¬¦è¾“å‡ºæµ
 
 	fw.write(char[] chars)
 	fw.write(char[] chars, start, end)
@@ -13,14 +13,14 @@ import java.io.*;
 
 public class FileWriterTest01 {
     public static void main(String[] args) throws Exception {
-        //´´½¨ÎÄ¼ş×Ö·ûÊä³öÁ÷
-        //FileWriter fw = new FileWriter("temp.txt");//¸²¸Ç
-        FileWriter fw = new FileWriter("temp.txt", true);//×·¼Ó
-        fw.write("Àîº£²¨£¡£¡£¡£¡");
-        char[] chars = {'ÎÒ', 'ÊÇ', 'ÖĞ', '¹ú', 'ÈË', '!'};
+        //åˆ›å»ºæ–‡ä»¶å­—ç¬¦è¾“å‡ºæµ
+        //FileWriter fw = new FileWriter("temp.txt");//è¦†ç›–
+        FileWriter fw = new FileWriter("temp.txt", true);//è¿½åŠ 
+        fw.write("ææµ·æ³¢ï¼ï¼ï¼ï¼");
+        char[] chars = {'æˆ‘', 'æ˜¯', 'ä¸­', 'å›½', 'äºº', '!'};
         fw.write(chars);
         fw.write(chars, 0, 6);
-        String s = "ÎÒÊÇÖĞ¹úÈË£¡";
+        String s = "æˆ‘æ˜¯ä¸­å›½äººï¼";
         fw.write(s);
         fw.flush();
         fw.close();

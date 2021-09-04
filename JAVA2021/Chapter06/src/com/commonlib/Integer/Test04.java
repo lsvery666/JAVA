@@ -21,7 +21,10 @@ public class Test04{
         //Integer-->int
         // int i2 = Integer.parseInt(i1);	// 错误: 不兼容的类型: Integer无法转换为String
         // int i2 = Integer.intValue(i1);	// 错误：无法将类 Integer中的方法 intValue应用到给定类型;
-        int i2 = i1.intValue();
+
+//        int i2 = i1.intValue();
+        // 自动拆箱
+        int i2 = i1;
         System.out.println(i2);
 
         //String-->Integer

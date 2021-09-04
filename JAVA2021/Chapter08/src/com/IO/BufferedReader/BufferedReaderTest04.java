@@ -2,7 +2,7 @@ package com.IO.BufferedReader;
 
 import java.io.*;
 
-//br.readLine()Ã¿µ÷ÓÃÒ»´Î ¾Í»á»ñÈ¡Ò»´Î¿ØÖÆÌ¨ÊäÈë
+//br.readLine()æ¯è°ƒç”¨ä¸€æ¬¡ å°±ä¼šè·å–ä¸€æ¬¡æ§åˆ¶å°è¾“å…¥
 public class BufferedReaderTest04 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

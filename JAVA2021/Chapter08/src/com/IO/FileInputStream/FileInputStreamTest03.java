@@ -9,9 +9,9 @@ import java.io.*;
 */
 public class FileInputStreamTest03{
     public static void main(String[] args) throws Exception{
-        FileInputStream fis = new FileInputStream("Chapter08/src/com/IO/FileInputStream/test.txt");
+        FileInputStream fis = new FileInputStream("D:/Lisen/JAVA/JAVA2021/Chapter08/src/com/IO/FileInputStream/test.txt");
 
-        byte[] bytes = new byte[1];//每一次最多读取三个字节
+        byte[] bytes = new byte[3];//每一次最多读取三个字节
 
         //int read(byte[] bytes);该方法返回的int类型的值代表的是这次读取了多少个字节
         int i1 = fis.read(bytes);

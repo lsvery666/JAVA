@@ -6,7 +6,6 @@ package com.oop.cloneTest;
 2. 深拷贝：拷贝对象，拷贝对象中的引用所指向的对象
  */
 
-import java.util.Arrays;
 
 public class Test02{
     public static void main(String[] args) throws CloneNotSupportedException {
@@ -88,16 +87,15 @@ class Student implements Cloneable {
         this.teacher = teacher;
     }
 
-    public Object clone() throws CloneNotSupportedException {
-        // 浅拷贝：
-//         Object object = super.clone();
-//         return object;
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // 默认是浅拷贝
+        // return super.clone();
 
-        // 深拷贝：
+        // 深拷贝需要自己实现
         Student student = (Student) super.clone();
         // 本来是浅复制，现在将Teacher对象复制一份并重新set进来
         student.setTeacher(student.getTeacher().clone());
         return student;
-
     }
 }

@@ -20,7 +20,7 @@ public class ArrayTest07 {
             System.out.println(i);
         }
 
-        // list.add(5);    // 编译可以通过，运行报错 java.lang.UnsupportedOperationException
+         list.add(5);    // 编译可以通过，运行报错 java.lang.UnsupportedOperationException
 
         // 对于基本类型，只能一个一个添加
         List<Integer> a = new ArrayList<>();

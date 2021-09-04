@@ -3,7 +3,7 @@ package com.oop.abstractTest;
 /*
     abstract可以修饰类和方法
 
-    1.class 关键字前加 abstract
+    1.class关键字前加 abstract
 	2.抽象类无法被实例化
 	3.虽然抽象类没有办法实例化，但是抽象类也有构造方法，该构造方法是给子类创建对象用的。
 	4.抽象类中可以定义非抽象方法

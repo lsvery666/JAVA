@@ -7,7 +7,7 @@ package com.Exception.basic;
 	|--Exception：异常，可以有针对性的处理方式
 
 	异常分两种：
-	1：编译时被检查的异常，只要是Exception及其子类都是编译时被检测的异常。
+	1：编译时被检查的异常，除了RunTimeException都是编译时被检测的异常。
 	如：FileNotFoundException、IOException、ClassNotFoundException、CloneNotSupportedException、InterruptedException。
 	2：运行时异常，其中Exception有一个特殊的子类RuntimeException，以及RuntimeException的子类是运行异常，也就说这个异常是编译时不被检查的异常。
 	如：IndexOutOfBoundsException、ClassCastException、NullPointerException、ArithmeticException、NumberFormatException、ConcurrentModificationException。

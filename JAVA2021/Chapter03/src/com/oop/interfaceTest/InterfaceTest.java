@@ -14,6 +14,7 @@ package com.oop.interfaceTest;
 public interface InterfaceTest {
     String NAME = "Li Sen";
     int AGE = 18;
+    //protected void m1();    // Modifier 'protected' not allowed here
     void m1();
     void m2();
 
@@ -27,7 +28,7 @@ public interface InterfaceTest {
 class Test implements InterfaceTest{
 
     public static void main(String[] args) {
-        // NAME = "H";
+//         NAME = "H";
         // AGE = 20;
         Test t = new Test();
         t.m1();

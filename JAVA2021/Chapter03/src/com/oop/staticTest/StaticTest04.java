@@ -33,7 +33,6 @@ class Animal {
     //所以静态变量是类级别的，采用“类名.”的方式访问
     static String type = "陆生"; //存储在方法区，不一定要显式初始化
 
-
     //Constructor
     Animal(String name, int age) {
         this.name = name;

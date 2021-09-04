@@ -5,6 +5,6 @@ public class Employee{
     String name = "张三";
     //成员方法
     public void work(){
-        System.out.println("员工在工作");
+        System.out.println("员工"+name+"在工作");
     }
 }
