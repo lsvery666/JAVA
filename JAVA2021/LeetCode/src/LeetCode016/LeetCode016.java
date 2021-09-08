@@ -2,12 +2,12 @@ package LeetCode016;
 
 import java.util.Arrays;
 
+
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
         int n = nums.length;
-        int closest_sum = 0;
-        int min_dis = Integer.MAX_VALUE;
+        int closest_sum = nums[0]+nums[1]+nums[2];
         for (int i = 0; i < n; i++) {
             int L = i + 1;
             int R = n - 1;
@@ -16,16 +16,13 @@ class Solution {
             }
             while(L<R){
                 int sum = nums[i] + nums[L] + nums[R];
-                if(sum<target){
-                    L++;
-                }else if(sum>target){
-                    R--;
-                }else{
+                closest_sum = Math.abs(target-sum) < Math.abs(target-closest_sum) ? sum : closest_sum;
+                if(sum == target){
                     return target;
-                }
-                if(Math.abs(sum-target)<min_dis){
-                    closest_sum = sum;
-                    min_dis = Math.abs(sum-target);
+                } else if(sum < target){
+                    L++;
+                }else {
+                    R--;
                 }
             }
         }

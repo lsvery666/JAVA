@@ -1,23 +1,22 @@
 package LeetCode003;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int right = 0;
-        int ans = 0;
-        int n = s.length();
-        HashSet<Character> set = new HashSet<>();
-        for(int left = 0;left<n;left++){
-            if(left!=0){
-                set.remove(s.charAt(left-1));
+        if(s.length() == 0) return 0;
+        HashMap<Character, Integer> charToIdx = new HashMap<>();
+        int left = 0, right = 0, maxLength = 1;
+
+        for(;right<s.length();++right){
+            if(charToIdx.containsKey(s.charAt(right))){
+                left = Math.max(left, charToIdx.get(s.charAt(right))+1);
             }
-            while(right<n && !set.contains(s.charAt(right))){
-                set.add(s.charAt(right++));
-            }
-            ans = Math.max(ans, right-left);
+            charToIdx.put(s.charAt(right), right);
+            maxLength = Math.max(maxLength, right-left+1);
         }
-        return ans;
+        return maxLength;
     }
 }
 
