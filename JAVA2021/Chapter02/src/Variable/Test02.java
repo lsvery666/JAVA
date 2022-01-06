@@ -23,5 +23,10 @@ public class Test02 {
 class MyInteger{
     int value;
     MyInteger(int value){ this.value = value; }
+
+    public static void main(String[] args) {
+        System.out.println("MyInteger");
+    }
+
 }
 

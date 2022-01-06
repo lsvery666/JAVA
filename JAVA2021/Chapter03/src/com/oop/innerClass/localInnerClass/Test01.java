@@ -43,7 +43,7 @@ class Outer {
     public static void test1(int temp) {
         class Inner {
             public void func() {
-                // 当方法内部类中声明中static方法中，则无法访问外部类的成员变量
+                // 当方法内部类中声明在static方法中，则无法访问外部类的成员变量
 //                System.out.println(num);
                 System.out.println(temp);
             }

@@ -8,7 +8,7 @@ package com.oop.staticTest;
 */
 public class StaticTest02{
 
-    int age = 0;
+    int age = 10;
 
     //无参数构造方法
     StaticTest02(){
@@ -17,7 +17,8 @@ public class StaticTest02{
 
     //实例语句块
     {
-        age = 1;
+        age = 100;
+        num = 200;
         System.out.println("1");
     }
     {
@@ -26,6 +27,8 @@ public class StaticTest02{
     {
         System.out.println("3");
     }
+
+    int num = 20;
 
     //静态语句块
     static{
@@ -37,9 +40,10 @@ public class StaticTest02{
         StaticTest02 s1 = new StaticTest02();
         StaticTest02 s2 = new StaticTest02();
         StaticTest02 s3 = new StaticTest02();
-        System.out.println(s1.age);	// 1
-        System.out.println(s2.age);	// 1
-        System.out.println(s3.age); // 1
+        System.out.println(s1.age);	// 100
+        System.out.println(s1.num); // 20
+        System.out.println(s2.age);	// 100
+        System.out.println(s3.age); // 100
 		/*
 		A
 		1
